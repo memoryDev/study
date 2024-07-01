@@ -1,11 +1,16 @@
 package com.memory.springjwt.entity;
 
+import com.memory.springjwt.dto.JoinDTO;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
+@Setter
+@Getter
 public class UserEntity {
 
     @Id
@@ -16,4 +21,5 @@ public class UserEntity {
     private String password;
 
     private String role;
+
 }
